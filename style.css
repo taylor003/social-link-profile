@@ -1,0 +1,104 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,800&family=Inter:wght@400;600;700&family=Lexend+Deca:wght@300;400&family=Manrope:wght@800&family=Outfit:wght@400;700&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+:root{
+  /* ### Primary */
+  --Green: hsl(75, 94%, 57%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
+--font-size: 14px;
+}
+
+ *,*>*{
+  font-family: 'Manrope', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }
+
+body{
+  min-height: 100vh;
+  background-color: var(--Off-Black);
+ }
+
+
+ .container{
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20%;
+  height: 520px;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Dark-Grey);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center;
+ }
+ section{
+  height: 290px;
+  padding: 10px;
+  width: 390px;
+  align-items: center;
+  text-align: center;
+ }
+
+ .top{
+  align-items: center;
+  display: grid;
+  text-align: center;
+
+ }
+ .top img {  
+  margin: auto;
+  border-radius: 50%;
+  height: 7rem;
+ }
+ .top h1{
+  color: var(--White);
+  font-weight: 700;
+ }
+ .top h3{
+  color: var(--Green);
+  font-size: var(--font-size);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+ }
+ .top p{
+  color: var(--White);
+  font-size: var(--font-size);
+  margin-top: -15px;
+ }
+
+ .bottom{
+  margin-top: -10px;
+  list-style: none;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  width: 390px;
+  margin-left: 55px;
+ }
+
+.bottom li{
+ list-style-type: none;
+ background-color:var(--Grey);
+ width: 80%;
+ border-radius: 8px;
+ padding: 10px;
+ color: var(--White);
+ font-weight: 200;
+ margin: .5rem;
+ font-size: var(--font-size);
+ cursor: pointer;
+}
+.bottom li:hover{
+  background-color: var(--Green);
+  transition: all 1.5s ease-in-out;
+}
+
+
